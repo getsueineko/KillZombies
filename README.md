@@ -4,7 +4,7 @@
 PowerShell 4.0 и выше
 Модуль PowerShell для Active Directory
 
-==========================================================================================================================================
+
 
 The program can find and transfer unused hosts to the newly created container. Though the results are saved to file Zombies.html, which can help in the rollback of your actions, nevertheless it should be used, with an eye to the second stage.
 
