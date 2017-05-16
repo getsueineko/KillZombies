@@ -158,17 +158,11 @@ if (Get-ADOrganizationalUnit -Filter "distinguishedName -eq '$newOU'") {
   & $home\Documents\Zombies.html
   Start-Sleep -Seconds 1
   $balloonScanResult = New-Object System.Windows.Forms.NotifyIcon 
-  #Define the icon for the system tray
   $balloonScanResult.Icon = [System.Drawing.SystemIcons]::Information
-  #Display title of balloon window
   $balloonScanResult.BalloonTipTitle = "Сканирование завершено"
-  #Type of balloon icon
   $balloonScanResult.BalloonTipIcon = "Info"
-  #Notification message
   $balloonScanResult.BalloonTipText = "`nРезультаты сканирования были сохранены в файл $home\Documents\Zombies.html"
-  #Make balloon tip visible when called
   $balloonScanResult.Visible = $True
-  #Call the balloon notification
   $balloonScanResult.ShowBalloonTip(5000)
   }
  }
